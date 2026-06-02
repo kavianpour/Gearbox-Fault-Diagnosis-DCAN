@@ -1,0 +1,56 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the conference paper below."
+title: "An Intelligent Gearbox Fault Diagnosis under Different Operating Conditions using Adversarial Domain Adaptation"
+abstract: >-
+  A hybrid unsupervised domain-adaptation framework (DCAN, Deep Coral
+  Adversarial Network) for gearbox fault diagnosis under changing operating
+  conditions. A one-dimensional CNN extracts features from raw vibration
+  signals, while two modules — deep CORAL and an adversarial domain
+  discriminator — align a labeled source operating condition with an
+  unlabeled target operating condition. Evaluated on the SEU gearbox dataset.
+authors:
+  - family-names: Kavianpour
+    given-names: Mohammadreza
+    affiliation: "Tarbiat Modares University, Tehran, Iran"
+  - family-names: Ghorvei
+    given-names: Mohammadreza
+    affiliation: "Tarbiat Modares University, Tehran, Iran"
+  - family-names: Kavianpour
+    given-names: Parisa
+    affiliation: "University of Mazandaran, Babolsar, Iran"
+  - family-names: Ramezani
+    given-names: Amin
+    affiliation: "Tarbiat Modares University, Tehran, Iran"
+  - family-names: Beheshti
+    given-names: "Mohammad T. H."
+    affiliation: "Tarbiat Modares University, Tehran, Iran"
+keywords:
+  - gearbox fault diagnosis
+  - domain adaptation
+  - deep CORAL network
+  - adversarial domain adaptation
+  - unsupervised domain adaptation
+  - convolutional neural network
+license: CC-BY-4.0
+preferred-citation:
+  type: conference-paper
+  title: "An Intelligent Gearbox Fault Diagnosis under Different Operating Conditions using Adversarial Domain Adaptation"
+  authors:
+    - family-names: Kavianpour
+      given-names: Mohammadreza
+    - family-names: Ghorvei
+      given-names: Mohammadreza
+    - family-names: Kavianpour
+      given-names: Parisa
+    - family-names: Ramezani
+      given-names: Amin
+    - family-names: Beheshti
+      given-names: "Mohammad T. H."
+  collection-title: "2022 8th International Conference on Control, Instrumentation and Automation (ICCIA)"
+  conference:
+    name: "8th International Conference on Control, Instrumentation and Automation (ICCIA)"
+  year: 2022
+  publisher:
+    name: IEEE
+  doi: "10.1109/ICCIA54998.2022.9737160"
+  url: "https://doi.org/10.1109/ICCIA54998.2022.9737160"

@@ -1,0 +1,67 @@
+================================================================================
+LICENSE
+================================================================================
+
+This repository contains two kinds of material with DIFFERENT licensing terms.
+Please read both sections.
+
+--------------------------------------------------------------------------------
+PART 1 — DOCUMENTATION (text / .md files)
+--------------------------------------------------------------------------------
+
+All textual documentation in this repository — including README.md and every
+file under docs/ — is licensed under the
+
+    Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+You are free to share and adapt this material for any purpose, even
+commercially, provided you give appropriate credit, link to the license, and
+indicate if changes were made.
+
+Human-readable summary:  https://creativecommons.org/licenses/by/4.0/
+Full legal code:         https://creativecommons.org/licenses/by/4.0/legalcode
+
+Suggested attribution:
+    "Documentation for 'An Intelligent Gearbox Fault Diagnosis under Different
+    Operating Conditions using Adversarial Domain Adaptation' by M. Kavianpour
+    et al., licensed under CC BY 4.0."
+
+--------------------------------------------------------------------------------
+PART 2 — FIGURES AND IMAGES (assets/ directory)  ***NOT CC BY 4.0***
+--------------------------------------------------------------------------------
+
+The image files in the assets/ directory:
+
+    assets/dcan_architecture.png
+    assets/sensitivity_alpha_beta.png
+    assets/results_table3.png
+
+are reproduced from the published paper:
+
+    M. Kavianpour, M. Ghorvei, P. Kavianpour, A. Ramezani, and
+    M. T. H. Beheshti, "An Intelligent Gearbox Fault Diagnosis under Different
+    Operating Conditions using Adversarial Domain Adaptation," 2022 8th
+    International Conference on Control, Instrumentation and Automation
+    (ICCIA), IEEE, 2022. DOI: 10.1109/ICCIA54998.2022.9737160
+
+    >>> These figures are Copyright (c) 2022 IEEE. All rights reserved. <<<
+
+They are included in this repository solely for non-commercial scholarly and
+academic showcase purposes (e.g., illustrating the authors' own published
+work in an academic portfolio). They are NOT covered by the CC BY 4.0 license
+in Part 1.
+
+Reuse of these figures by third parties — including reproduction,
+redistribution, or modification — must comply with IEEE's copyright and reuse
+policy:
+
+    https://www.ieee.org/publications/rights/index.html
+
+Per IEEE policy, authors retain the right to reuse their own figures in their
+own subsequent works and personal/academic showcases with appropriate credit;
+other reuse generally requires permission from IEEE.
+
+If you are the copyright holder and have any concern about this use, please
+open an issue and the material will be addressed promptly.
+
+================================================================================
