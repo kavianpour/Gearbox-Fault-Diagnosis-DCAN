@@ -6,7 +6,7 @@
   <a href="https://doi.org/10.1109/ICCIA54998.2022.9737160"><img alt="DOI" src="https://img.shields.io/badge/DOI-10.1109%2FICCIA54998.2022.9737160-1f7a8c"></a>
   <a href="https://ieeexplore.ieee.org/document/9737160"><img alt="Venue" src="https://img.shields.io/badge/Venue-IEEE%20ICCIA%202022-00488d"></a>
   <img alt="Year" src="https://img.shields.io/badge/Year-2022-555">
-  <img alt="Citations" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.crossref.org%2Fworks%2F10.1109%2FICCIA54998.2022.9737160&query=%24.message.is-referenced-by-count&label=citations&color=2e8b57&suffix=%2B">
+  <img alt="Citations" src="https://img.shields.io/badge/citations-17%2B-2e8b57">
   <img alt="Docs License" src="https://img.shields.io/badge/Docs%20License-CC%20BY%204.0-lightgrey">
   <img alt="Status" src="https://img.shields.io/badge/code-not%20yet%20public-orange">
 </p>
