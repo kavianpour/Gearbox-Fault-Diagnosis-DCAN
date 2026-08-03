@@ -62,4 +62,4 @@ Most cross-condition fault-diagnosis research has focused on **bearings**; compa
 
 ---
 
-*This document is part of the documentation-only release; the source code is not yet public. See the [Roadmap](../README.md#roadmap).*
+*Each response above is implemented in the code at the repository root: the shared CNN and pseudo-labelling in [`model.py`](../model.py), CORAL and the adversarial discriminator in [`model.py`](../model.py) and [`da_losses.py`](../da_losses.py), and the JDA/DANN/C-MKMMD/C-CORAL comparisons in [`classic.py`](../classic.py) and [`methods.py`](../methods.py).*
