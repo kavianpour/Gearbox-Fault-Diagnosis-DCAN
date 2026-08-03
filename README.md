@@ -1,5 +1,4 @@
-[README.md](https://github.com/user-attachments/files/30654310/README.md)
-[README.md](https://github.com/user-attachments/files/30654308/README.md)# Intelligent Gearbox Fault Diagnosis under Different Operating Conditions via Adversarial Domain Adaptation
+# Intelligent Gearbox Fault Diagnosis under Different Operating Conditions via Adversarial Domain Adaptation
 
 > Official implementation of the IEEE ICCIA 2022 paper.
 
