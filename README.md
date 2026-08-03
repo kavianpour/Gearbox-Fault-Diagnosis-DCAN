@@ -73,8 +73,6 @@ $$\mathcal{L} = \mathcal{L}_c + \alpha\,\mathcal{L}_d + \beta\,\mathcal{L}_{cora
 
 where $\mathcal{L}_c$ is the source classification (softmax) loss, $\mathcal{L}_d$ is the adversarial discriminator (binary cross-entropy) loss, $\mathcal{L}_{coral}$ is the second-order CORAL loss, and $\alpha,\beta$ weight each adaptation module. Full equations and the layer table are in [`docs/method.md`](docs/method.md).
 
-**A note on Table I.** The paper's own architecture table lists convolution layers C2 and C3 with stride 2, but that is inconsistent with the output sizes on the same row — those sizes (124, 60, and the final flatten of 896) only come out right if C2 and C3 use stride 1. [`config.py`](config.py) works through the arithmetic layer by layer and uses stride 1, which is what reproduces the table's own stated output shape.
-
 ---
 
 ## Why this is hard
