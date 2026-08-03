@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="250" viewBox="0 0 820 250" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif">
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#42526b"/></marker><marker id="rev" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#ef4b3c"/></marker></defs>
+<rect width="820" height="250" fill="#ffffff"/>
+<text x="30" y="36" font-size="18" font-weight="600" text-anchor="start" fill="#20303f">Cross-condition transfer tasks</text>
+<text x="30" y="58" font-size="12" font-weight="400" text-anchor="start" fill="#5a6b80">the source domain is labelled, the target domain is not</text>
+<rect x="70" y="100" width="200" height="84" rx="8" fill="#2b6cb0" stroke="#00000018"/>
+<text x="170.0" y="131.0" fill="#ffffff" font-size="12" text-anchor="middle"><tspan font-weight='700'>Condition A</tspan></text>
+<text x="170.0" y="146.0" fill="#ffffff" font-size="12" text-anchor="middle">20 Hz  /  0 V</text>
+<text x="170.0" y="161.0" fill="#ffffff" font-size="12" text-anchor="middle">5 health states</text>
+<rect x="540" y="100" width="200" height="84" rx="8" fill="#12a05c" stroke="#00000018"/>
+<text x="640.0" y="131.0" fill="#ffffff" font-size="12" text-anchor="middle"><tspan font-weight='700'>Condition B</tspan></text>
+<text x="640.0" y="146.0" fill="#ffffff" font-size="12" text-anchor="middle">30 Hz  /  2 V</text>
+<text x="640.0" y="161.0" fill="#ffffff" font-size="12" text-anchor="middle">5 health states</text>
+<path d="M270,126 L536,126" stroke="#42526b" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+<path d="M540,162 L274,162" stroke="#42526b" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+<text x="405" y="118" font-size="12" font-weight="700" text-anchor="middle" fill="#42526b">A &#8594; B</text>
+<text x="405" y="182" font-size="12" font-weight="700" text-anchor="middle" fill="#42526b">B &#8594; A</text>
+<text x="30" y="222" font-size="12" font-weight="400" text-anchor="start" fill="#5a6b80">Health, Chipped, Root, Miss, Surface — SEU gearbox, second vibration channel, z-score normalised.</text>
+</svg>
