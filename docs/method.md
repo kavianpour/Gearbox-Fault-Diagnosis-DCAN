@@ -50,7 +50,7 @@ Design choices reported in the paper:
 | | FC4 | 128 | 128 × 1 |
 | | FC5 | 5 | 5 × 1 |
 
-> Note: the layer table is transcribed directly from the paper. C2/P2 are listed in the body though abbreviated as "···" in the architecture figure.
+> Note: the layer table is transcribed directly from the paper. Its own "size / stride / filters" column lists C2 and C3 with stride 2, but that is inconsistent with the "output" column on the same row — those output sizes (124 and 60) are reproduced only if C2 and C3 use stride **1**; stride 2 gives 62 and 30 instead. The arithmetic is checked layer by layer in `config.py`. This implementation uses stride 1 for C2 and C3, which is what makes the flatten size come out to 896 as the table states.
 
 ---
 
@@ -123,6 +123,24 @@ Here $\theta_f, \theta_c, \theta_d$ are the parameters of the feature extractor,
 | Repetitions | Each experiment repeated **10×**, results averaged |
 
 The $\alpha,\beta$ values were chosen by sweeping {0.01, 0.1, 0.5, 1}; the best task-A→B accuracy (93.6 %) occurs at $\alpha = 1, \beta = 0.5$, while $\alpha = \beta = 0$ reduces DCAN to a plain CNN (80.23 %). See the sensitivity figure in the [README](../README.md#two-key-ideas).
+
+---
+
+## 6. Where each piece lives in the code
+
+| Component | File | Entry point |
+|---|---|---|
+| Hyper-parameters | [`config.py`](../config.py) | `Config` dataclass |
+| SEU loader, windowing, z-score, transfer tasks | [`data.py`](../data.py) | `build_condition_dataset`, `transfer_loaders` |
+| Condition-identification CNN (F) | [`model.py`](../model.py) | `FeatureExtractor` |
+| Gradient reversal layer | [`model.py`](../model.py) | `grad_reverse`, `calc_coeff` |
+| Domain discriminator (D) | [`model.py`](../model.py) | `DomainDiscriminator` |
+| Full network | [`model.py`](../model.py) | `DCAN` |
+| CORAL, MMD, fixed-bandwidth MKMMD | [`da_losses.py`](../da_losses.py) | `coral_loss`, `mmd_loss`, `mkmmd_loss` |
+| Method registry (CNN / C-MKMMD / C-CORAL / DCAN) | [`methods.py`](../methods.py) | `DEEP_METHODS` |
+| JDA and the shallow DANN baseline | [`classic.py`](../classic.py) | `run_jda`, `ShallowDANN` |
+| Training loop, Eq. 6 objective | [`train.py`](../train.py) | `run_deep` |
+| Original explanatory figures | [`make_figures.py`](../make_figures.py) | `adaptation_concept`, `transfer_tasks` |
 
 ---
 
