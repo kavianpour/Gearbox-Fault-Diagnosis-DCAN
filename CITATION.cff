@@ -31,7 +31,11 @@ keywords:
   - adversarial domain adaptation
   - unsupervised domain adaptation
   - convolutional neural network
-license: CC-BY-4.0
+  - SEU gearbox dataset
+  - PyTorch
+license: MIT
+repository-code: "https://github.com/kavianpour/Gearbox-Fault-Diagnosis-DCAN"
+type: software
 preferred-citation:
   type: conference-paper
   title: "An Intelligent Gearbox Fault Diagnosis under Different Operating Conditions using Adversarial Domain Adaptation"

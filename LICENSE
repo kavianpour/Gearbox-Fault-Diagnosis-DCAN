@@ -2,15 +2,51 @@
 LICENSE
 ================================================================================
 
-This repository contains two kinds of material with DIFFERENT licensing terms.
-Please read both sections.
+This repository contains three kinds of material with DIFFERENT licensing terms.
+Please read all three sections.
 
 --------------------------------------------------------------------------------
-PART 1 — DOCUMENTATION (text / .md files)
+PART 1 - SOURCE CODE (.py files, configuration, scripts)
 --------------------------------------------------------------------------------
 
-All textual documentation in this repository — including README.md and every
-file under docs/ — is licensed under the
+All source code in this repository is licensed under the
+
+    MIT License
+
+    Copyright (c) 2022-2025 Mohammadreza Kavianpour, Mohammadreza Ghorvei,
+                            Parisa Kavianpour, Amin Ramezani,
+                            Mohammad T. H. Beheshti
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--------------------------------------------------------------------------------
+PART 2 - DOCUMENTATION AND ORIGINAL FIGURES
+--------------------------------------------------------------------------------
+
+All textual documentation in this repository - including README.md and every
+file under docs/ - together with the original figures created for this
+repository:
+
+    assets/adaptation_modules.svg
+    assets/transfer_tasks.svg
+
+is licensed under the
 
     Creative Commons Attribution 4.0 International License (CC BY 4.0).
 
@@ -21,38 +57,33 @@ indicate if changes were made.
 Human-readable summary:  https://creativecommons.org/licenses/by/4.0/
 Full legal code:         https://creativecommons.org/licenses/by/4.0/legalcode
 
-Suggested attribution:
-    "Documentation for 'An Intelligent Gearbox Fault Diagnosis under Different
-    Operating Conditions using Adversarial Domain Adaptation' by M. Kavianpour
-    et al., licensed under CC BY 4.0."
-
 --------------------------------------------------------------------------------
-PART 2 — FIGURES AND IMAGES (assets/ directory)  ***NOT CC BY 4.0***
+PART 3 - PAPER FIGURES  ***NOT CC BY 4.0 OR MIT***
 --------------------------------------------------------------------------------
 
-The image files in the assets/ directory:
+The following image files:
 
     assets/dcan_architecture.png
-    assets/sensitivity_alpha_beta.png
     assets/results_table3.png
+    assets/sensitivity_alpha_beta.png
 
 are reproduced from the published paper:
 
     M. Kavianpour, M. Ghorvei, P. Kavianpour, A. Ramezani, and
-    M. T. H. Beheshti, "An Intelligent Gearbox Fault Diagnosis under Different
-    Operating Conditions using Adversarial Domain Adaptation," 2022 8th
-    International Conference on Control, Instrumentation and Automation
-    (ICCIA), IEEE, 2022. DOI: 10.1109/ICCIA54998.2022.9737160
+    M. T. H. Beheshti, "An Intelligent Gearbox Fault Diagnosis under
+    Different Operating Conditions using Adversarial Domain Adaptation,"
+    2022 8th International Conference on Control, Instrumentation and
+    Automation (ICCIA), IEEE, 2022. DOI: 10.1109/ICCIA54998.2022.9737160
 
     >>> These figures are Copyright (c) 2022 IEEE. All rights reserved. <<<
 
 They are included in this repository solely for non-commercial scholarly and
 academic showcase purposes (e.g., illustrating the authors' own published
-work in an academic portfolio). They are NOT covered by the CC BY 4.0 license
-in Part 1.
+work in an academic portfolio). They are NOT covered by the MIT license in
+Part 1 or the CC BY 4.0 license in Part 2.
 
-Reuse of these figures by third parties — including reproduction,
-redistribution, or modification — must comply with IEEE's copyright and reuse
+Reuse of these figures by third parties - including reproduction,
+redistribution, or modification - must comply with IEEE's copyright and reuse
 policy:
 
     https://www.ieee.org/publications/rights/index.html
@@ -63,5 +94,15 @@ other reuse generally requires permission from IEEE.
 
 If you are the copyright holder and have any concern about this use, please
 open an issue and the material will be addressed promptly.
+
+--------------------------------------------------------------------------------
+DATA
+--------------------------------------------------------------------------------
+
+The SEU gearbox dataset is NOT redistributed in this repository. It is
+distributed by its original authors at Southeast University and remains
+subject to their own terms:
+
+    https://github.com/cathysiyu/Mechanical-datasets
 
 ================================================================================
