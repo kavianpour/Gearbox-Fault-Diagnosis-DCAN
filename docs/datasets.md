@@ -55,12 +55,14 @@ In every transfer task the source is labeled and the target is unlabeled, mirror
 
 ## 4. Obtaining the data
 
-The SEU gearbox dataset is publicly distributed by its original authors. It is **not redistributed in this repository.** The canonical release is the Southeast University "Mechanical-datasets" / Gearbox Dataset, commonly mirrored on GitHub and data-sharing platforms.
+The SEU gearbox dataset is publicly distributed by its original authors. It is **not redistributed in this repository.** The canonical release is the Southeast University "Mechanical-datasets" / Gearbox Dataset, commonly mirrored on GitHub — see <https://github.com/cathysiyu/Mechanical-datasets>.
 
-To use it with this work:
+The release is distributed through Google Drive, which has no stable direct-download endpoint, so this repository does not attempt to script that step. Download the archive by hand and point [`data.py`](../data.py) at the extracted `gearset` folder; a companion toolkit, **seu-gearbox-toolkit**, handles the Drive handshake, CSV parsing (the files mix tab and comma delimiters), channel selection and windowing as a standalone, reusable package — see [Related](../README.md#related).
+
+To use the dataset with this work:
 
 1. Obtain the SEU **gearbox** sub-dataset from the original distribution.
-2. Select **channel 2**.
+2. Select **channel 2** (`cfg.channel`, 0-indexed as `1`).
 3. Apply **z-score** normalization to the raw vibration signal.
 4. Build the two tasks (A: 20 Hz–0 V, B: 30 Hz–2 V) and split each **80 / 20** for train / test.
 5. For a transfer task, keep source labels and treat the target as unlabeled.
@@ -69,4 +71,18 @@ To use it with this work:
 
 ---
 
-*This document is part of the documentation-only release; preprocessing and task-split scripts will accompany the code when it is released. See the [Roadmap](../README.md#roadmap).*
+## 5. Reproducing the preprocessing
+
+Everything above is applied by [`data.py`](../data.py):
+
+| Step | Function | Configured by |
+|---|---|---|
+| Read one CSV, tolerate mixed delimiters and headers | `_read_channel` | `channel` |
+| z-score normalisation | `_normalize` | `normalize` |
+| Overlapping windows | `_windows` | `sample_length`, `window_step` |
+| Per-class train/test split | `build_condition_dataset` | `train_ratio` |
+| Labelled source / unlabelled target pair | `transfer_loaders` | `data_root`, task |
+
+---
+
+*Preprocessing parameters live in [`config.py`](../config.py); command-line flags override them for a single run.*
